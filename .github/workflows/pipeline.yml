@@ -17,5 +17,7 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Run "npm run build" command
-      run: npm run build
+      run: npm run build --if present
+    - name: Run "npm run test"
+      run: npm run test
       
